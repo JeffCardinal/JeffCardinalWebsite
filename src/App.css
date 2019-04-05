@@ -1,33 +1,80 @@
-.App {
+@import url("https://use.typekit.net/qyy8cgs.css");
+
+@font-face {
+  font-family: "europa";
+  src: url("https://use.typekit.net/qyy8cgs.css") format("opentype");
+}
+
+body {
+  background-image: linear-gradient(90deg, #33bbff, #4dffc3);
+  overflow-x: hidden;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.pill {
+  font-family: europa, Helvetica Neue, sans-serif;
+  padding-top: 100px;
   text-align: center;
+  font-style: normal;
+  font-display: block;
+  border-radius: 200px;
+  background-color: #ffffff;
+  width: 750px;
+  height: 175px;
+  padding: 5px;
+
+  transition: 0.3s ease-in-out;
+
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 1s; /* Firefox < 16 */
+      -ms-animation: fadein 1s; /* Internet Explorer */
+       -o-animation: fadein 1s; /* Opera < 12.1 */
+          animation: fadein 1s;
+
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+
+  z-index: 1000;
+  position: relative;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+@media only screen and (max-width: 900px) {
+  .pill {
+    width: 550px;
+    height: 100px;
+    font-size: 0.7em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.centered {
+  width: 100%;
+}
+
+.flex-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.drop-shadow {
+  transform: translate3d(0,0,0);
+  -webkit-filter: drop-shadow(0px 20px 50px #006bb3);
+     -moz-filter: drop-shadow(0px 20px 50px #006bb3);
+      -ms-filter: drop-shadow(0px 20px 50px #006bb3);
+       -o-filter: drop-shadow(0px 20px 50px #006bb3);
+          filter: drop-shadow(0px 20px 50px #006bb3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name {
+  font-size: 7em;
+  font-weight: 700;
+  color: deepskyblue;
 }

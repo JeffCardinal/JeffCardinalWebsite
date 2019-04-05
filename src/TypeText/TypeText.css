@@ -1,0 +1,14 @@
+.Description {
+  font-size: 1.75em;
+  font-weight: 300;
+  font-family: 'Roboto Mono', monospace;
+  color: #ff7ac0;
+  margin-top: -15px;
+}
+
+@media only screen and (max-width:900px) {
+  .Description{
+    /* font-size: 1.6em; */
+    /* margin-top: -15px; */
+  }
+}
