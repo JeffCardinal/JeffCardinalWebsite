@@ -13,26 +13,39 @@
 
   display: flex;
   justify-content: center;
-  align-items: center;
-
-  /* position: relative; */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .glyph:hover {
-  -webkit-filter: brightness(120%);
-  filter: brightness(120%);
-  transform: scale(1.1);
+  -webkit-transform: translateZ(0) scale(1.1, 1.1);
+  transform: translateZ(0) scale(1.1, 1.1);
+  filter:brightness(1.1);
+}
+
+.glyph svg {
+  margin-top: 12px;
 }
 
 @media only screen and (max-width: 900px) {
   .glyph {
-    width: 50px;
-    height: 50px;line-height: 52px;
-    font-size: 2.3em;
+    /* margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px; */
+
+    width: 55px;
+    height: 55px;
+    line-height: 52px;
+    font-size: 2.5em;
+  }
+
+  .glyph svg {
+    margin-top: 8px;
   }
 }
 
-.g1 {
+#g1 {
+  background-color: #00bfff;
   -webkit-animation: slideIn 2s;
      -moz-animation: slideIn 2s;
       -ms-animation: slideIn 2s;
@@ -40,7 +53,8 @@
           animation: slideIn 2s;
 }
 
-.g2 {
+#g2 {
+  background-color: #cb94ff;
   -webkit-animation: slideIn 2.5s;
      -moz-animation: slideIn 2.5s;
       -ms-animation: slideIn 2.5s;
@@ -48,7 +62,8 @@
           animation: slideIn 2.5s;
 }
 
-.g3 {
+#g3 {
+  background-color: #ff84be;
   -webkit-animation: slideIn 3s;
      -moz-animation: slideIn 3s;
       -ms-animation: slideIn 3s;

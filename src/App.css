@@ -8,6 +8,14 @@
 body {
   background-image: linear-gradient(90deg, #33bbff, #4dffc3);
   overflow-x: hidden;
+
+  /* EXPERIMENTAL */
+  image-rendering: optimizeSpeed;             /*                     */
+  image-rendering: -moz-crisp-edges;          /* Firefox             */
+  image-rendering: -o-crisp-edges;            /* Opera               */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed       */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
 }
 
 @keyframes fadein {
@@ -65,7 +73,7 @@ body {
 }
 
 .drop-shadow {
-  transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0); /*CSS memes for Safari*/
   -webkit-filter: drop-shadow(0px 20px 50px #006bb3);
      -moz-filter: drop-shadow(0px 20px 50px #006bb3);
       -ms-filter: drop-shadow(0px 20px 50px #006bb3);

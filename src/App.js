@@ -24,6 +24,7 @@ class App extends Component {
         show: true
         // blurStyle: `filter: blur(1.5rem);`
       });
+      console.log(this.state.show)
     };
 
     hideModal = () => {
@@ -50,15 +51,15 @@ class App extends Component {
             </div>
             <div className="flex-container">
 
-              <Glyph backgroundColor="#00bfff" num="g1" link="https://github.com/jeffcardinal">
+              <Glyph id="g1" link="https://github.com/jeffcardinal">
                 <FontAwesomeIcon icon={faGithub} color="#fff" />
               </Glyph>
 
-              <Glyph backgroundColor="#cb94ff" num="g2" link="https://twitter.com/vaperror">
+              <Glyph id="g2" link="https://twitter.com/vaperror">
                 <FontAwesomeIcon icon={faTwitter} color="#fff" />
               </Glyph>
 
-              <Glyph backgroundColor="#ff84be" num="g3" link="https://www.instagram.com/vaperror/">
+              <Glyph id="g3" link="https://www.instagram.com/vaperror/">
                 <FontAwesomeIcon icon={faInstagram} color="#fff" />
               </Glyph>
 

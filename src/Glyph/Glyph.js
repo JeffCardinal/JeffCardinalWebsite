@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './Glyph.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const glyph = (props) => {
-    const clazz = props.num + " glyph"
-    console.log(props.num)
     return (
       <a href={props.link}>
-        <div className={clazz} style={{backgroundColor: props.backgroundColor }}>
+        <div className="glyph" id={props.id}>
           {props.children}
         </div>
       </a>
