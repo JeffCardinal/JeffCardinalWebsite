@@ -39,9 +39,11 @@ class App extends Component {
     // let blurStyle = {
     // };
 
+//<div onClick={this.showModal}>Show Modal</div>
+
     return (
       <div>
-      <div onClick={this.showModal}>Show Modal</div>
+
       <Modal show={this.state.show} handleClose={this.hideModal}/>
       <Container>
         <div className="vertical-centered drop-shadow" style={this.state.blurStyle}>

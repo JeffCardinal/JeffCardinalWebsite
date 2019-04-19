@@ -13,8 +13,6 @@
 
   display: flex;
   justify-content: center;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 }
 
 .glyph:hover {
@@ -29,10 +27,6 @@
 
 @media only screen and (max-width: 900px) {
   .glyph {
-    /* margin-top: 10px;
-    margin-right: 5px;
-    margin-left: 5px; */
-
     width: 55px;
     height: 55px;
     line-height: 52px;
