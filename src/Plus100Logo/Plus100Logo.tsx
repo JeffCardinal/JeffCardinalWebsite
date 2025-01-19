@@ -1,12 +1,10 @@
-import React from 'react'
 import Plus100LogoPill from './Plus100LogoPill.png'
 import './Plus100Logo.css'
 
-const Plus100Logo = ( props ) => {
+export default function Plus100Logo({link}:{link: string}) {
     return(
-      <a href={props.link}>
+      <a href={link}>
         <img src={Plus100LogoPill} />
       </a>
     )
 }
-export default Plus100Logo;
